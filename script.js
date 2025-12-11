@@ -5,23 +5,25 @@ function toggleMobileMenu() {
         rightNav.classList.toggle('active');
     }
 }
-        
-        function toggleDropdown(event) {
-            event.preventDefault();
-            event.stopPropagation();
-            const dropdown = event.target.parentElement;
-            const isActive = dropdown.classList.contains('active');
-            
-            document.querySelectorAll('.dropdown.active').forEach(d => d.classList.remove('active'));
-            
-            if (!isActive) {
-                dropdown.classList.add('active');
-            }
-        }
-        
-        document.addEventListener('click', function() {
-            document.querySelectorAll('.dropdown.active').forEach(d => d.classList.remove('active'));
-        });
+
+function toggleDropdown(event) {
+    event.preventDefault();
+    event.stopPropagation();
+    
+    // Close all dropdowns first
+    document.querySelectorAll('.dropdown').forEach(d => d.classList.remove('active'));
+    
+    // Open the clicked dropdown
+    const dropdown = event.target.closest('.dropdown');
+    dropdown.classList.add('active');
+}
+
+// Close dropdowns when clicking outside
+document.addEventListener('click', function(event) {
+    if (!event.target.closest('.dropdown')) {
+        document.querySelectorAll('.dropdown').forEach(d => d.classList.remove('active'));
+    }
+});
 
 
 let currentSlide = 0;
