@@ -105,7 +105,7 @@ a {
     height: 39px;
 }
 
-.logo img[src="logg.png"] {
+.logo img[src="LOGG.png"] {
     filter: brightness(0) invert(1);
     height: 51px;
 }
@@ -723,8 +723,9 @@ marquee {
     border-radius: 2px;
 }
 
-/* Responsive Design */
+
 @media (min-width: 769px) {
+    
     .register {
         display: flex;
         gap: 3%;
@@ -739,7 +740,9 @@ marquee {
 }
 
 @media (max-width: 768px) {
+  
     .mobile-menu-btn {
+      
         display: flex;
         order: -1;
     }
@@ -761,6 +764,7 @@ marquee {
     }
     
     .main-nav ul {
+        background-color: #060a32;
         flex-direction: column;
         width: 100%;
     }
@@ -859,7 +863,7 @@ marquee {
     opacity: 0.9;
 }
 
-/* Study Section */
+
 .study-section {
     max-width: 1000px;
     margin: 60px auto;
@@ -1067,4 +1071,47 @@ marquee {
     border-radius: 5px;
     cursor: pointer;
     font-size: 12px;
+}
+/* Mobile & small screens */
+@media (max-width: 768px) {
+
+    .top-bar {
+        padding: 8px 0;
+        font-size: 0.1rem;
+    }
+
+    .top-bar-content {
+        flex-direction:column;  
+        text-align: center;
+        gap: 5px;
+        padding: 0 10px;
+    }
+
+    .top-bar-left,
+    .top-bar-right {
+        justify-content: center;
+        gap: 10px;               
+        flex-wrap: wrap;
+    }
+
+    .top-bar-content span {
+        font-size: 0.5px;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .top-bar-content {
+        gap: 3px;
+    }
+
+    .top-bar-left,
+    .top-bar-right {
+        gap: 6px;
+    }
+
+    .top-bar-content span {
+        font-size: 0.8rem;
+    }
 }
