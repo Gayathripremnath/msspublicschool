@@ -1,11 +1,11 @@
 function toggleMobileMenu() {
-    document.getElementById('mainNav').classList.toggle('active');
-    const rightNav = document.querySelector('.right-nav');
-    if (rightNav) {
-        rightNav.classList.toggle('active');
-    }
+    document.getElementById("mainNav").classList.toggle("active");
 }
 
+function toggleDropdown(event) {
+    event.preventDefault();
+    event.target.parentElement.classList.toggle("active");
+}
 function toggleDropdown(event) {
     event.preventDefault();
     event.stopPropagation();

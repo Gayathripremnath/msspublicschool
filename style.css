@@ -38,7 +38,7 @@ a {
 
 /* Top Bar */
 .top-bar {
-    background: #192f59;
+    background: #030f27;
     padding: 12px 0;
     font-size: 0.9rem;
     color: #ffffff;
@@ -159,7 +159,7 @@ a {
 }
 
 .main-nav a:hover {
-    color: #3b82f6;
+    color:  #030f27;
 }
 
 /* Dropdown Styles */
@@ -538,7 +538,7 @@ marquee {
 .wel-text h1, .p-mes h1 {
     font-size: 28px;
     font-weight: 600;
-    color: #192f59;
+    color:  #030f27;
     margin-bottom: 16px;
     font-family: 'Playfair Display', serif;
 }
@@ -577,7 +577,7 @@ marquee {
 
 /* Footer */
 .site-footer {
-    background: #192f59;
+    background: #030f27;
     color: #ffffff;
     padding-top: 40px;
     position: relative;
@@ -604,7 +604,7 @@ marquee {
 }
 
 .footer-column h3 {
-    color: #3b82f6;
+    color:  #030f27;
     font-size: 22px;
     font-weight: 700;
     margin-bottom: 20px;
@@ -641,7 +641,7 @@ marquee {
     color: white;
     font-size: 20px;
     cursor: pointer;
-    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+    box-shadow: 0 4px 15px  #030f27;
     transition: all 0.3s ease;
     opacity: 0;
     visibility: hidden;
@@ -687,7 +687,7 @@ marquee {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #192f59;
+    background-color: #030f27;
     text-align: center;
     padding: 15px 20px;
     color: #ffffff;
@@ -708,7 +708,7 @@ marquee {
 .mobile-menu-btn {
     display: none;
     flex-direction: column;
-    background: #192f59;
+    background:  #030f27;
     border: none;
     cursor: pointer;
     padding: 10px;
@@ -836,7 +836,7 @@ marquee {
     }
 }
 
-/* Stats Section */
+
 .stats-section {
     display: flex;
     justify-content: center;
@@ -844,7 +844,7 @@ marquee {
     max-width: 800px;
     margin: 60px auto;
     padding: 40px 20px;
-    background: linear-gradient(135deg, #192f59, #ffffff);
+    background: linear-gradient(135deg,  #030f27, #ffffff);
     border-radius: 15px;
     color: white;
 }
@@ -875,7 +875,7 @@ marquee {
 
 .study-section h2 {
     font-size: 32px;
-    color: #192f59;
+    color: #030f27;
     margin-bottom: 40px;
 }
 
@@ -904,7 +904,7 @@ marquee {
 
 .study-card h3 {
     font-size: 18px;
-    color: #192f59;
+    color:  #030f27;
     margin-bottom: 10px;
 }
 
@@ -913,12 +913,12 @@ marquee {
     color: #4b5563;
 }
 
-/* Study Resources Section */
+
 .study-resources {
     width: 100%;
     margin: 50px 0;
     padding: 50px 5%;
-    background: #192f59;
+    background: #030f27;
 }
 
 .study-resources h2 {
@@ -1154,7 +1154,7 @@ marquee {
     .main-nav ul {
         flex-direction: column;
         width: 100%;
-        background-color: #060a32;
+        background-color:  #030f27;
     }
 
     .main-nav li {
@@ -1193,7 +1193,7 @@ marquee {
         display: flex;
         flex-direction: column;
         order: -1; 
-        background: #192f59;
+        background: #030f27;
         border: none;
         cursor: pointer;
         padding: 10px;
@@ -1252,5 +1252,61 @@ marquee {
     
     .hero-text h1 {
         font-size: 2.5rem !important;
+    }
+}
+/* ================================
+   MOBILE MENU FIX
+   ================================ */
+@media (max-width: 882px) {
+
+    /* hide desktop menus automatically */
+    .main-nav,
+    .right-nav {
+        display: none !important;
+        width: 100%;
+    }
+
+    /* show them ONLY when active */
+    .main-nav.active,
+    .right-nav.active {
+        display: block !important;
+    }
+
+    /* mobile menu layout */
+    .main-nav ul,
+    .right-nav ul {
+        display: flex !important;
+        flex-direction: column;
+        background: #030f27;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    .main-nav li,
+    .right-nav li {
+        width: 100%;
+        padding: 15px 0;
+        border-bottom: 1px solid rgba(255,255,255,0.2);
+    }
+
+    .logo {
+    
+        position: relative !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+        display: flex !important;
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+        order: 1;
+    }
+
+    /* keep hamburger on right */
+    .mobile-menu-btn {
+        order: 0;
+        align-self: flex-end;
+        z-index: 9999;
     }
 }
