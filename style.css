@@ -549,7 +549,7 @@ marquee {
     line-height: 1.8;
     color: #4b5563;
     margin-bottom: 20px;
-    font-family: cursive    ;
+    font-family: monospace    ;
     text-align: justify;
 }
 
