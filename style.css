@@ -11,7 +11,8 @@ html, body {
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+ 
+  font-family: "Montserrat", sans-serif;
     color: #696969;
     line-height: 1.6;
     background: #ffffff;
@@ -143,15 +144,14 @@ a {
 
 .main-nav a {
     color: #ffffff;
-    font-weight: 600;
+    font-weight: 300;
     font-size: 1rem;
     text-transform: capitalize;
     transition: all 0.3s ease;
     position: relative;
     letter-spacing: 0.2px;
     display: block;
-    font-family: Arial, sans-serif;
-}
+    font-family: Georgia, 'Times New Roman', Times, serif}
 
 .main-nav li:hover {
     background: rgba(25,47,89,0.1);
@@ -159,7 +159,7 @@ a {
 }
 
 .main-nav a:hover {
-    color:  #030f27;
+    color:  #afbbd2;
 }
 
 /* Dropdown Styles */
@@ -299,10 +299,10 @@ a {
 
 marquee {
     flex: 1;
-    color: #192f59;
+    color: #510303;
     font-weight: 600;
     font-size: 14px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    font-family: "Montserrat", sans-serif;
     padding: 0 20px;
 }
 
@@ -336,7 +336,7 @@ marquee {
 }
 
 .hero-text h1 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 7rem;
     font-weight: 700;
     line-height: 1;
@@ -380,7 +380,7 @@ marquee {
     letter-spacing: 1px;
 }
 
-/* Register Section */
+
 .register{
     padding: 30px 5%;
     width: 100%;
@@ -464,7 +464,6 @@ marquee {
     }
 }
 
-/* Welcome & Principal Sections */
 .welcome, .principal {
     display: flex;
     align-items: center;
@@ -540,7 +539,7 @@ marquee {
     font-weight: 600;
     color:  #030f27;
     margin-bottom: 16px;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 
@@ -550,7 +549,7 @@ marquee {
     line-height: 1.8;
     color: #4b5563;
     margin-bottom: 20px;
-    font-family: 'Roboto', sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: justify;
 }
 

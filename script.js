@@ -10,15 +10,13 @@ function toggleDropdown(event) {
     event.preventDefault();
     event.stopPropagation();
     
-    // Close all dropdowns first
+   
     document.querySelectorAll('.dropdown').forEach(d => d.classList.remove('active'));
-    
-    // Open the clicked dropdown
+  
     const dropdown = event.target.closest('.dropdown');
     dropdown.classList.add('active');
 }
 
-// Close dropdowns when clicking outside
 document.addEventListener('click', function(event) {
     if (!event.target.closest('.dropdown')) {
         document.querySelectorAll('.dropdown').forEach(d => d.classList.remove('active'));
