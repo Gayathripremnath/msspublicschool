@@ -545,11 +545,11 @@ marquee {
 
 
 .wel-text p, .p-mes p {
-    font-size: 16px;
+    font-size: 17px;
     line-height: 1.8;
     color: #4b5563;
     margin-bottom: 20px;
-    font-family: monospace    ;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: justify;
 }
 
