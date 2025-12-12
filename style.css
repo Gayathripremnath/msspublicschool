@@ -903,7 +903,7 @@ marquee {
 
 .study-card h3 {
     font-size: 18px;
-    color:  #030f27;
+    color: white;
     margin-bottom: 10px;
 }
 
@@ -919,7 +919,9 @@ marquee {
     padding: 50px 5%;
     background: #030f27;
 }
-
+.study-resources h3{
+    color: white;
+}
 .study-resources h2 {
     text-align: center;
     font-size: 36px;
